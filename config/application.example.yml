@@ -20,6 +20,6 @@
 SENDGRID_USERNAME: Your_Username
 SENDGRID_PASSWORD: Your_Password
 DOMAIN_NAME: example.com
-ADMIN_NAME: First User
-ADMIN_EMAIL: user@example.com
-ADMIN_PASSWORD: changeme
+ADMIN_NAME: Ben Hanna
+ADMIN_EMAIL: ben@zaluna.io
+ADMIN_PASSWORD: Benjam2n
