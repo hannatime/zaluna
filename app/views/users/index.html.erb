@@ -4,6 +4,20 @@
     <div class="column">
       <table class="table">
         <tbody>
+        <tr>
+          <th>
+          User
+          </th>
+          <th>
+          Email Confirmed
+          </th>
+          <th>
+          Change Role
+          </th>
+          <th>
+          Delete User
+          </th>
+          </tr>
           <% @users.each do |user| %>
             <tr>
               <%= render user %>

@@ -2,6 +2,13 @@
   <%= link_to user.email, user %>
 </td>
 <td>
+<% if user.confirmed_at %>
+<%= "Yes" %>
+<% elsif !user.confirmed_at %>
+<%= "No" %>
+<% end %>
+</td>
+<td>
   <%= form_for(user) do |f| %>
     <%= f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}) %>
     <%= f.submit 'Change Role', :class => 'button-xs' %>
