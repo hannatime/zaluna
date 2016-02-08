@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   mount Koudoku::Engine, at: 'koudoku'
   scope module: 'koudoku' do
     get 'pricing' => 'subscriptions#index', as: 'pricing'
-    
+    get 'edit' => 'registration#edit', as: 'edit'
   end
 
 
@@ -12,7 +12,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   resources :charges
-
-
 
 end
